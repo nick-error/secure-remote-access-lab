@@ -7,7 +7,6 @@ O laboratório foi construído para estabelecer um ambiente de estudos seguro, e
 * **Exposição Direta:** Necessidade de abrir portas para acesso remoto via internet.
 * **Ataques de Brute Force:** Proteção contra bots que testam senhas e usuários comuns.
 * **Autenticação Robusta:** Eliminar a fragilidade de senhas tradicionais.
-* O maior obstáculo técnico deste laboratório foi o **CGNAT (Carrier Grade NAT)** da rede local. 
 * **Problema:** O provedor de internet não fornece um IP público real para o roteador, impossibilitando o redirecionamento de portas (Port Forwarding) tradicional.
 * **Motivação:** A utilização da VM na Azure surgiu como a solução para atuar como um **Bastion Host**, permitindo que o laboratório seja acessível de qualquer lugar, contornando a limitação do IP compartilhado do provedor.
 
