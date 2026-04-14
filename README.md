@@ -20,10 +20,10 @@ A segurança do ambiente foi baseada em camadas de **Hardening**:
 Para garantir a segurança, as seguintes diretivas foram aplicadas:
 
 ```bash
-Port 2222                     # Porta personalizada para reduzir scans automáticos
-PasswordAuthentication no     # Desativa login por senha
-PubkeyAuthentication yes      # Ativa login apenas por chave
-PermitRootLogin no            # Impede acesso direto como root
+Port 2222                     - Porta personalizada para reduzir scans automáticos
+PasswordAuthentication no     - Desativa login por senha
+PubkeyAuthentication yes      - Ativa login apenas por chave
+PermitRootLogin no            - Impede acesso direto como root
 
 # Camadas de Segurança (Deep Dive)
 * **Fail2Ban (Modo Aggressive):** Configurado para detectar e banir até mesmo tentativas que falham na fase de `publickey`, garantindo que o atacante seja bloqueado no Firewall antes mesmo de tentar novas conexões.
