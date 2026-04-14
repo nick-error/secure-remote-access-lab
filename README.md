@@ -30,6 +30,8 @@ PermitRootLogin no            # Proíbe acesso direto como root
 MaxAuthTries 3                # Limita tentativas de login
 Screenshot 
 
-<img width="784" height="25" alt="image" src="https://github.com/user-attachments/assets/92596cd2-8068-4b29-872d-1459e02519bf" />
+<img width="781" height="20" alt="image" src="https://github.com/user-attachments/assets/e36352e2-250c-4ffc-a31c-13235756a663" />
+
+
 
 
