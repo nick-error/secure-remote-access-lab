@@ -34,6 +34,24 @@ Sreenshot
 
 <img width="784" height="25" alt="image" src="https://github.com/user-attachments/assets/c14b88b3-67f0-4b49-94b1-41c4f2539e7b" />
 
+# Configuração do monitoramento agressivo para detectar erros de login:
+
+```bash
+Ini, TOML
+[sshd]
+enabled = true
+port    = 2222
+filter  = sshd
+mode    = aggressive
+maxretry = 3
+bantime  = 1d
+```
+Camadas de Segurança (Deep Dive)
+Fail2Ban (Modo Aggressive): Diferente do modo padrão, o modo agressivo captura tentativas que falham logo no início (fase de publickey), banindo o atacante no Firewall (UFW) antes que ele possa testar outros usuários.
+
+Firewall (UFW): Configurado para permitir tráfego apenas na porta específica do laboratório, negando todo o restante por padrão.
+
+Log Monitoring: Monitoramento em tempo real do arquivo /var/log/auth.log para identificação de padrões de ataque.
 
 
 
