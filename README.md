@@ -28,10 +28,12 @@ PasswordAuthentication no     # Bloqueia login por senha
 PubkeyAuthentication yes      # Permite apenas chaves públicas
 PermitRootLogin no            # Proíbe acesso direto como root
 MaxAuthTries 3                # Limita tentativas de login
-Screenshot 
+```
 
+Sreenshot
 
-<img width="781" height="20" alt="image" src="https://github.com/user-attachments/assets/0f5aa67a-d7ed-4742-892d-a37a5788f40c" />
+<img width="784" height="25" alt="image" src="https://github.com/user-attachments/assets/c14b88b3-67f0-4b49-94b1-41c4f2539e7b" />
+
 
 
 
