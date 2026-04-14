@@ -30,7 +30,7 @@ PermitRootLogin no            # Proíbe acesso direto como root
 MaxAuthTries 3                # Limita tentativas de login
 ```
 
-Sreenshot
+Screenshot
 
 <img width="784" height="25" alt="image" src="https://github.com/user-attachments/assets/c14b88b3-67f0-4b49-94b1-41c4f2539e7b" />
 
@@ -46,7 +46,11 @@ mode    = aggressive
 maxretry = 3
 bantime  = 1d
 ```
-Camadas de Segurança (Deep Dive)
+Screenshot
+
+<img width="512" height="190" alt="image" src="https://github.com/user-attachments/assets/b3ceeb78-54d5-4837-8edb-c5942e118491" />
+
+#Camadas de Segurança (Deep Dive)
 Fail2Ban (Modo Aggressive): Diferente do modo padrão, o modo agressivo captura tentativas que falham logo no início (fase de publickey), banindo o atacante no Firewall (UFW) antes que ele possa testar outros usuários.
 
 Firewall (UFW): Configurado para permitir tráfego apenas na porta específica do laboratório, negando todo o restante por padrão.
