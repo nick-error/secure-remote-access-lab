@@ -50,13 +50,20 @@ Screenshot
 
 <img width="512" height="190" alt="image" src="https://github.com/user-attachments/assets/b3ceeb78-54d5-4837-8edb-c5942e118491" />
 
-#Camadas de Segurança (Deep Dive)
+# Camadas de Segurança (Deep Dive)
 Fail2Ban (Modo Aggressive): Diferente do modo padrão, o modo agressivo captura tentativas que falham logo no início (fase de publickey), banindo o atacante no Firewall (UFW) antes que ele possa testar outros usuários.
 
 Firewall (UFW): Configurado para permitir tráfego apenas na porta específica do laboratório, negando todo o restante por padrão.
 
 Log Monitoring: Monitoramento em tempo real do arquivo /var/log/auth.log para identificação de padrões de ataque.
+# Tecnologias Utilizadas
+OS: Ubuntu Server
 
+Cloud: Microsoft Azure
+
+Security: Fail2Ban (Advanced Mode), SSH Keys, UFW
+
+Monitoramento: Netstat, Journalctl, Logwatch
 
 
 
